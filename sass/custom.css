@@ -11227,6 +11227,13 @@ html {
   width: 50%;
 }
 
+.resources-section {
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+  padding: 50px;
+}
+
 .resources-section h1, .resources-section .h1 {
   padding-top: 2%;
 }
