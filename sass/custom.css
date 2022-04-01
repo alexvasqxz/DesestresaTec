@@ -11967,7 +11967,9 @@ html {
           box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -11996,7 +11998,8 @@ html {
   padding: 0 16px;
 }
 
-.container::after, .row::after {
+.container::after,
+.row::after {
   content: "";
   clear: both;
   display: table;
@@ -12015,11 +12018,31 @@ html {
   background-color: #000;
   text-align: center;
   cursor: pointer;
+  border-radius: 12px;
   width: 100%;
 }
 
 .button:hover {
   background-color: #555;
+}
+
+.button-main {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 15px;
+  font-size: 20px;
+  color: white;
+  background-color: #bcd4e6;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.button-main:hover {
+  color: white;
+  background-color: #add8e6;
 }
 
 @media screen and (max-width: 650px) {
