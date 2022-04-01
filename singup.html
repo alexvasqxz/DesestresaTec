@@ -44,7 +44,31 @@
           </nav>
           
           <!-- Information and Body -->
-          <div class="container">
+          <div class = "signup-section col-sm-12 col-md-12 col-lg-12">
+            <form>
+              <h2>User Creation</h2>
+              <div class = "row">
+                <div class = "col">
+                  <label for="inputName">Nombre</label>
+                  <input type="text" class="form-control" id = "inputName" placeholder="Nombre">
+                </div>
+                <div class = "col">
+                  <label for="inputLName">Apellido</label>
+                  <input type="text" class="form-control" id = "inputLName" placeholder="Apellido">
+                </div>
+              </div>
+                  <label for="inputMail">Mail</label>
+                  <input type="email" class = "form-control" id = "inputMail" placeholder="Mail">
+                  <label for="inputPass">Contraseña</label>
+                  <input type="password" class = "form-control" id = "inputPass" placeholder="Contraseña">
+                
+                  <br>
+                  <label for="inputPicture">Sube una foto de perfil</label>
+                  <input type="file" class="form-control-file" id="inputPicture">
+                  <br><br>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
               
             <!-- Footer -->
             <footer class="pt-4 my-md-5 pt-md-5 border-top">
