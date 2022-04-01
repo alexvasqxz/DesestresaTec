@@ -63,6 +63,10 @@ html {
   background-color: #000;
   text-align: center;
   cursor: pointer;
+<<<<<<< HEAD
+=======
+  border-radius: 12px;
+>>>>>>> 20fdcb25b6dbdc2b9fee44eb90c68a5199270ec0
   width: 100%;
 }
 
@@ -70,12 +74,35 @@ html {
   background-color: #555;
 }
 
+<<<<<<< HEAD
+=======
+.button-main {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 15px;
+  font-size: 20px;
+  color: white;
+  background-color: #bcd4e6;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.button-main:hover {
+  color: white;
+  background-color: #add8e6;
+}
+
+>>>>>>> 20fdcb25b6dbdc2b9fee44eb90c68a5199270ec0
 @media screen and (max-width: 650px) {
   .column {
     width: 100%;
     display: block;
   }
 }
+<<<<<<< HEAD
 
 .signup-section {
   padding-left: 10%;
@@ -90,3 +117,5 @@ html {
 .userin-section img {
   width: 40%;
 }
+=======
+>>>>>>> 20fdcb25b6dbdc2b9fee44eb90c68a5199270ec0
