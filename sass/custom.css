@@ -11130,12 +11130,7 @@ html {
 *,
 *:before,
 *:after {
-<<<<<<< HEAD
   box-sizing: inherit;
-=======
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
->>>>>>> 20fdcb25b6dbdc2b9fee44eb90c68a5199270ec0
 }
 
 .column {
@@ -11220,12 +11215,20 @@ html {
   padding-top: 2%;
 }
 
+.signup-section label {
+  margin-top: 2%;
+}
+
 .userin-section {
   padding-top: 5%;
 }
 
 .userin-section img {
-  width: 40%;
+  width: 50%;
+}
+
+.resources-section h1, .resources-section .h1 {
+  padding-top: 2%;
 }
 
 /*# sourceMappingURL=custom.css.map */

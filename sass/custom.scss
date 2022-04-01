@@ -63,10 +63,7 @@ html {
   background-color: #000;
   text-align: center;
   cursor: pointer;
-<<<<<<< HEAD
-=======
   border-radius: 12px;
->>>>>>> 20fdcb25b6dbdc2b9fee44eb90c68a5199270ec0
   width: 100%;
 }
 
@@ -74,8 +71,6 @@ html {
   background-color: #555;
 }
 
-<<<<<<< HEAD
-=======
 .button-main {
   border: none;
   outline: 0;
@@ -95,14 +90,12 @@ html {
   background-color: #add8e6;
 }
 
->>>>>>> 20fdcb25b6dbdc2b9fee44eb90c68a5199270ec0
 @media screen and (max-width: 650px) {
   .column {
     width: 100%;
     display: block;
   }
 }
-<<<<<<< HEAD
 
 .signup-section {
   padding-left: 10%;
@@ -110,12 +103,18 @@ html {
   padding-top: 2%;
 }
 
+.signup-section label{
+  margin-top: 2%;
+}
+
 .userin-section {
   padding-top: 5%;
 }
 
 .userin-section img {
-  width: 40%;
+  width: 50%;
 }
-=======
->>>>>>> 20fdcb25b6dbdc2b9fee44eb90c68a5199270ec0
+
+.resources-section h1{
+  padding-top: 2%;
+}
