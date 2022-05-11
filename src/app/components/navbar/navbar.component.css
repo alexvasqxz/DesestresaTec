@@ -1,0 +1,35 @@
+.navbar {
+  background-color: #e3f2fd;
+}
+
+.navbar .navbar-brand {
+  font-style: italic;
+  font-weight: 50px;
+  font-size: 20px;
+}
+
+.navbar .navbar-brand:hover {
+  font-size: 22px;
+}
+
+.navbar .nav-link, .navbar .dropdown-item {
+  font-style: italic;
+  font-size: 16px;
+}
+
+.navbar .nav-link:hover, .navbar .dropdown-item:hover {
+  font-size: 18px;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #e3f2fd;
+}
+
+.navbar .dropdown-menu {
+  background-color: #6e98b8;
+}
+
+.navbar:hover {
+  background-color: #6e98b8;
+}
+/*# sourceMappingURL=navbar.component.css.map */

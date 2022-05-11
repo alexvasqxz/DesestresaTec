@@ -1,0 +1,44 @@
+@import "../../variables";
+
+@mixin navbar-big-text {
+  font-style: italic;
+  font-weight: $px50;
+  font-size: $px20;
+
+  &:hover {
+    font-size: 22px;
+  }
+}
+
+@mixin navbar-elements {
+    font-style: italic;
+    font-size: $px16;
+  
+    &:hover {
+      font-size: 18px;
+    }
+  }
+
+.navbar {
+  background-color: $background-blue;
+
+  .navbar-brand {
+      @include navbar-big-text;
+  }
+
+  .nav-link, .dropdown-item{
+      @include navbar-elements;
+  }
+
+  .dropdown-item:hover{
+    background-color: $background-blue;
+  }
+
+  .dropdown-menu{
+    background-color: $blue-2;
+  }
+
+  &:hover {
+    background-color: $blue-2;
+  }
+}

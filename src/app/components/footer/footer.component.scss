@@ -1,0 +1,12 @@
+@import "../../variables";
+
+.text-title{
+    font-style: italic;
+    font-size: $px20;
+    color: $dark-text;
+}
+
+.text-muted{
+    font-size: $px16;
+    color: $grey;
+}

@@ -1,0 +1,145 @@
+@import "./variables";
+
+@mixin titleText {
+    text-align: $center;
+    color: $dark-text;
+    text-transform: uppercase;
+    padding: $text-padding;
+  }
+  
+  @mixin normalText {
+    text-align: $left;
+    color: $dark-text;
+    padding: $text-padding;
+    font-size: $px25;
+  }
+  
+  @mixin buttons{
+    border: none;
+    outline: $zero;
+    display: inline-block;
+    padding: $button-padding;
+    color: $white;
+    text-align: $center;
+    cursor: pointer;
+    border-radius: $btn-radius;
+  
+    &:hover{
+      color: $white;
+    }
+  }
+  
+  @mixin top-section{
+    padding: $top-padding;
+    text-align: $center;
+    background-color: $background-blue;
+    color: $dark-text;
+  }
+  
+  .title-text {
+    @include titleText;
+  }
+  
+  .normal-text {
+    @include normalText;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: $zero;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  .about-section {
+    @include top-section;
+  }
+  
+  .resources-section{
+    @include top-section;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: $left;
+    width: $width-50;
+    margin-bottom: $px16;
+    padding: $column-padding;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: $px8;
+  }
+  
+  .container {
+    padding: $container-padding;
+  }
+  
+  .button {
+    @include buttons;
+    background-color: $dark-text;
+    width: $width-100;
+  
+    &:hover{
+      background-color: $grey;
+    }
+  }
+  
+  .button-main {
+    @include buttons;
+    background-color: $blue-1;
+    font-size: $px20;
+    width: $width-80;
+  
+    &:hover{
+      background-color: $blue-2;
+    }
+  }
+  
+  .container::after,
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: $grey;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: $width-100;
+      display: block;
+    }
+  }
+  
+  .signup-section {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: $top-section-padding;
+  }
+  
+  .signup-section label{
+    margin-top: $top-section-padding;
+  }
+  
+  .userin-section {
+    padding-top: $top-section-padding;
+  }
+  
+  .userin-section img {
+    width: $width-50;
+  }
+  
+  .resources-section h1{
+    padding-top: $top-section-padding;
+  }

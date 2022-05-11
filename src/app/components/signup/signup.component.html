@@ -1,0 +1,48 @@
+<div class="container-fluid">
+
+    <div class="signup-section col-sm-12 col-md-12 col-lg-12">
+      <form>
+        <h2>{{title}}</h2>
+        <div class="row">
+          <div class="col">
+            <label for="inputName">{{form[0]}}</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputName"
+              placeholder="{{form[0]}}"
+            />
+          </div>
+          <div class="col">
+            <label for="inputLName">{{form[1]}}</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputLName"
+              placeholder="{{form[1]}}"
+            />
+          </div>
+        </div>
+        <label for="inputMail">{{form[2]}}</label>
+        <input
+          type="email"
+          class="form-control"
+          id="inputMail"
+          placeholder="{{form[2]}}"
+        />
+        <label for="inputPass">{{form[3]}}</label>
+        <input
+          type="password"
+          class="form-control"
+          id="inputPass"
+          placeholder="{{form[3]}}"
+        />
+
+        <label for="inputPicture">{{form[4]}}</label><br />
+        <input type="file" class="form-control-file" id="inputPicture" />
+        <br /><br />
+        <a href="#" class="btn btn-primary">{{bttnText}}</a>
+      </form>
+    </div>
+
+  </div>
