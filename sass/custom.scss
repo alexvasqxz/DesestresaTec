@@ -5,13 +5,66 @@
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+@import "./variables";
+
+@mixin titleText {
+  text-align: $center;
+  color: $dark-text;
+  text-transform: uppercase;
+  padding: $text-padding;
+}
+
+@mixin normalText {
+  text-align: $left;
+  color: $dark-text;
+  padding: $text-padding;
+}
+
+@mixin buttons{
+  border: none;
+  outline: $zero;
+  display: inline-block;
+  padding: $button-padding;
+  color: $white;
+  text-align: $center;
+  cursor: pointer;
+  border-radius: $btn-radius;
+
+  &:hover{
+    color: $white;
+  }
+}
+
+@mixin top-section{
+  padding: $top-padding;
+  text-align: $center;
+  background-color: $background-blue;
+  color: $dark-text;
+}
+
+.title-text {
+  @include titleText;
+}
+
+.normal-text {
+  @include normalText;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+  margin: $zero;
 }
 
 html {
   box-sizing: border-box;
+}
+
+.about-section {
+  @include top-section;
+}
+
+.resources-section{
+  @include top-section;
 }
 
 *,
@@ -21,26 +74,40 @@ html {
 }
 
 .column {
-  float: left;
-  width: 50%;
-  margin-bottom: 16px;
-  padding: 0 8px;
+  float: $left;
+  width: $width-50;
+  margin-bottom: $px16;
+  padding: $column-padding;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-}
-
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: #474e5d;
-  color: white;
+  margin: $px8;
 }
 
 .container {
-  padding: 0 16px;
+  padding: $container-padding;
+}
+
+.button {
+  @include buttons;
+  background-color: $dark-text;
+  width: $width-100;
+
+  &:hover{
+    background-color: $grey;
+  }
+}
+
+.button-main {
+  @include buttons;
+  background-color: $blue-1;
+  font-size: $px20;
+  width: $width-80;
+
+  &:hover{
+    background-color: $blue-2;
+  }
 }
 
 .container::after,
@@ -51,48 +118,12 @@ html {
 }
 
 .title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 12px;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
-.button-main {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 15px;
-  font-size: 20px;
-  color: white;
-  background-color: #add8e6;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 12px;
-  width: 100%;
-}
-
-.button-main:hover {
-  color: white;
-  background-color: #bcd4e6;
+  color: $grey;
 }
 
 @media screen and (max-width: 650px) {
   .column {
-    width: 100%;
+    width: $width-100;
     display: block;
   }
 }
@@ -100,28 +131,21 @@ html {
 .signup-section {
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 2%;
+  padding-top: $top-section-padding;
 }
 
 .signup-section label{
-  margin-top: 2%;
+  margin-top: $top-section-padding;
 }
 
 .userin-section {
-  padding-top: 5%;
+  padding-top: $top-section-padding;
 }
 
 .userin-section img {
-  width: 50%;
-}
-
-.resources-section{
-  text-align: center;
-  background-color: #474e5d;
-  color: white;
-  padding: 50px;
+  width: $width-50;
 }
 
 .resources-section h1{
-  padding-top: 2%;
+  padding-top: $top-section-padding;
 }

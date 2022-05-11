@@ -11957,6 +11957,19 @@ fieldset:disabled .btn {
   }
 }
 
+.title-text {
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  padding: 1.5rem 2rem;
+}
+
+.normal-text {
+  text-align: left;
+  color: black;
+  padding: 1.5rem 2rem;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -11965,6 +11978,20 @@ body {
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #e3f2fd;
+  color: black;
+}
+
+.resources-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #e3f2fd;
+  color: black;
 }
 
 *,
@@ -11987,39 +12014,25 @@ html {
   margin: 8px;
 }
 
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: #474e5d;
-  color: white;
-}
-
 .container {
   padding: 0 16px;
-}
-
-.container::after,
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
 }
 
 .button {
   border: none;
   outline: 0;
   display: inline-block;
-  padding: 8px;
+  padding: 15px;
   color: white;
-  background-color: #000;
   text-align: center;
   cursor: pointer;
   border-radius: 12px;
+  background-color: black;
   width: 100%;
+}
+
+.button:hover {
+  color: white;
 }
 
 .button:hover {
@@ -12031,18 +12044,32 @@ html {
   outline: 0;
   display: inline-block;
   padding: 15px;
-  font-size: 20px;
   color: white;
-  background-color: #add8e6;
   text-align: center;
   cursor: pointer;
   border-radius: 12px;
-  width: 100%;
+  background-color: #64bad7;
+  font-size: 20px;
+  width: 80%;
 }
 
 .button-main:hover {
   color: white;
-  background-color: #bcd4e6;
+}
+
+.button-main:hover {
+  background-color: #6e98b8;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: #555;
 }
 
 @media screen and (max-width: 650px) {
@@ -12063,18 +12090,11 @@ html {
 }
 
 .userin-section {
-  padding-top: 5%;
+  padding-top: 2%;
 }
 
 .userin-section img {
   width: 50%;
-}
-
-.resources-section {
-  text-align: center;
-  background-color: #474e5d;
-  color: white;
-  padding: 50px;
 }
 
 .resources-section h1, .resources-section .h1 {
