@@ -13,7 +13,9 @@
               de ti mismx mientras te sientes apoyadx en el camino
             </h4>
             <br />
-            <app-animation></app-animation>
+            <app-login-button 
+            *ngIf="(auth.isAuthenticated$ | async) === false"
+            ></app-login-button>
           </div>
         </div>
         

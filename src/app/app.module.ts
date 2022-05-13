@@ -17,6 +17,10 @@ import { AnimationComponent } from './components/animation/animation.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { AuthModule } from '@auth0/auth0-angular';
+import { environment as env } from '../environments/environment';
+import { LoginButtonComponent } from './components/login-button/login-button.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,13 +34,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormularyComponent,
     DoctorsComponent,
     ChartComponent,
-    AnimationComponent
+    AnimationComponent,
+    LoginButtonComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgxChartsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AuthModule.forRoot({
+      ... env.auth,
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

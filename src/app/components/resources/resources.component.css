@@ -99,10 +99,6 @@ html {
   color: white;
 }
 
-.button-main:hover {
-  background-color: #ffd1dc;
-}
-
 .container::after,
 .row::after {
   content: "";
