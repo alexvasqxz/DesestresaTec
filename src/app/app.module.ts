@@ -15,6 +15,7 @@ import { DoctorsComponent } from './components/doctors/doctors.component';
 import { ChartComponent } from './components/chart/chart.component';
 import { AnimationComponent } from './components/animation/animation.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxChartsModule
+    NgxChartsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
