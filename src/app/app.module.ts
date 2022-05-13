@@ -12,6 +12,9 @@ import { SignupComponent } from './components/signup/signup.component';
 import { UserComponent } from './components/user/user.component';
 import { FormularyComponent } from './components/formulary/formulary.component';
 import { DoctorsComponent } from './components/doctors/doctors.component';
+import { ChartComponent } from './components/chart/chart.component';
+import { AnimationComponent } from './components/animation/animation.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -24,11 +27,14 @@ import { DoctorsComponent } from './components/doctors/doctors.component';
     SignupComponent,
     UserComponent,
     FormularyComponent,
-    DoctorsComponent
+    DoctorsComponent,
+    ChartComponent,
+    AnimationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

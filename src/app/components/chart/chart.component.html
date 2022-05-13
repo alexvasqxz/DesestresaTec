@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <div class="chart container mt-sm-5 my-1">
+    <h3 class="title-text">Estadisticas de Salud Mental en Mexico (2021)</h3>
+      <ngx-charts-pie-grid
+        [view]="view"
+        [scheme]="colorScheme"
+        [results]="single"
+        [designatedTotal]="total"
+        (select)="onSelect($event)"
+      >
+      </ngx-charts-pie-grid>
+    </div>
+</div>
