@@ -1,21 +1,19 @@
 @import "../../variables";
 
 @mixin navbar-big-text {
-  font-style: italic;
   font-weight: $px50;
   font-size: $px20;
 
   &:hover {
-    font-size: 22px;
+    font-style: italic;
   }
 }
 
 @mixin navbar-elements {
-    font-style: italic;
     font-size: $px16;
   
     &:hover {
-      font-size: 18px;
+      font-style: italic;
     }
   }
 

@@ -3,22 +3,20 @@
 }
 
 .navbar .navbar-brand {
-  font-style: italic;
   font-weight: 50px;
   font-size: 20px;
 }
 
 .navbar .navbar-brand:hover {
-  font-size: 22px;
+  font-style: italic;
 }
 
 .navbar .nav-link, .navbar .dropdown-item {
-  font-style: italic;
   font-size: 16px;
 }
 
 .navbar .nav-link:hover, .navbar .dropdown-item:hover {
-  font-size: 18px;
+  font-style: italic;
 }
 
 .navbar .dropdown-item:hover {
@@ -26,10 +24,10 @@
 }
 
 .navbar .dropdown-menu {
-  background-color: #ffd1dc;
+  background-color: #a3f2ff;
 }
 
 .navbar:hover {
-  background-color: #ffd1dc;
+  background-color: #a3f2ff;
 }
 /*# sourceMappingURL=navbar.component.css.map */

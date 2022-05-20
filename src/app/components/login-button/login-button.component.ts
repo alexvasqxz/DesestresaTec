@@ -8,6 +8,8 @@ import { AuthService } from '@auth0/auth0-angular';
 })
 export class LoginButtonComponent implements OnInit {
 
+  bttnText = "Registrarse";
+  
   constructor(public auth: AuthService) { }
 
   ngOnInit(): void {
