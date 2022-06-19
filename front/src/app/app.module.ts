@@ -20,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthModule } from '@auth0/auth0-angular';
 import { environment as env } from '../environments/environment';
 import { LoginButtonComponent } from './components/login-button/login-button.component';
+import { SpotiButtonComponent } from './components/spoti-button/spoti-button.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { LoginButtonComponent } from './components/login-button/login-button.com
     DoctorsComponent,
     ChartComponent,
     AnimationComponent,
-    LoginButtonComponent
+    LoginButtonComponent,
+    SpotiButtonComponent
   ],
   imports: [
     BrowserModule,

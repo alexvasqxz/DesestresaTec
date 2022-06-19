@@ -1,7 +1,7 @@
 import express, { Express, Request, Response } from 'express';
 import dotenv from 'dotenv';
 import { body, validationResult } from 'express-validator';
-import {auth, requiredScopes} from 'express-oauth2-jwt-bearer';
+import { auth, requiredScopes} from 'express-oauth2-jwt-bearer';
 
 dotenv.config();
 
@@ -39,7 +39,7 @@ var mongoose = require("mongoose");
 
 const checkJwt = auth({
     audience: 'http://localhost',
-    issuerBaseURL: 'https://dev-5xxxigo6.us.auth0.com/'
+    issuerBaseURL: 'https://dev-zvbheutd.us.auth0.com/'
 });
 
 var uri = "mongodb+srv://MongoUser:DesestresatecMongo@cluster0.uzk8g.mongodb.net/?retryWrites=true&w=majority";
