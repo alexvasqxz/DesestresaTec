@@ -39,7 +39,7 @@ var mongoose = require("mongoose");
 
 const checkJwt = auth({
     audience: 'http://localhost',
-    issuerBaseURL: 'https://dev-5xxxigo6.us.auth0.com/'
+    issuerBaseURL: 'https://dev-zvbheutd.us.auth0.com/'
 });
 
 var uri = "mongodb+srv://MongoUser:DesestresatecMongo@cluster0.uzk8g.mongodb.net/?retryWrites=true&w=majority";
@@ -83,7 +83,7 @@ router.get("/", function (req, res) {
 var Experto = require("./models/Experts");
 
 router.route('/experto')
-    .post(body('name').isAlpha().withMessage('must contain valid characters'),
+        .post(body('name').isAlpha().withMessage('must contain valid characters'),
         body('prof').isAlpha().withMessage('must contain valid characters'),
         body('adress').isLength({min:10, max:100}).withMessage('must have a valid length'),
         checkJwt,
