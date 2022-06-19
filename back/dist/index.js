@@ -25,10 +25,14 @@ var router = express_1.default.Router();
 var mongoose = require("mongoose");
 var uri = "mongodb+srv://MongoUser:DesestresatecMongo@cluster0.uzk8g.mongodb.net/?retryWrites=true&w=majority";
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+var Expert = require("./models/Experts");
 var db = mongoose.connection;
 db.on("error", console.error.bind(console, "error de conexion"));
 db.once("openUri", function () {
     console.log("conectado a mongo");
+});
+app.listen(8002, () => {
+    console.log("server is running at http://localhost:8002");
 });
 router.use((req, res, next) => {
     res.set("Access-Control-Allow-Origin", "*");
