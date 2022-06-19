@@ -1,7 +1,7 @@
 import express, { Express, Request, Response } from 'express';
 import dotenv from 'dotenv';
 import { body, validationResult } from 'express-validator';
-import {auth, requiredScopes} from 'express-oauth2-jwt-bearer';
+import { auth, requiredScopes} from 'express-oauth2-jwt-bearer';
 
 dotenv.config();
 

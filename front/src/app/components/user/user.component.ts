@@ -10,7 +10,7 @@ export class UserComponent{
   title = "Informacion de Usuario"
 
   fields = {
-    Name: "Javier Mendieta",
-    Email: "A01657253@tec.mx"
+    Name: "Gus Vasquez",
+    Email: "A00823326@tec.mx"
   }
 }
